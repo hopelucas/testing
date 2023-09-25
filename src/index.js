@@ -12,7 +12,7 @@ const client = new Client({
 });
 
 client.on("ready", () => {
-    bot.application.commands.set([], 1103294377033474078);
+    client.application.commands.set([], 1103294377033474078);
 });
 
 new CommandKit({

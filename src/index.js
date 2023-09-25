@@ -12,7 +12,7 @@ const client = new Client({
 });
 
 client.on("ready", () => {
-    client.application.commands.set([])
+    guild.application.commands.set([])
 });
 
 new CommandKit({

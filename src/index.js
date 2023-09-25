@@ -11,11 +11,6 @@ const client = new Client({
     ],
 });
 
-client.on("ready", () => {
-    const guild = client.guilds.cache.get(1103294377033474078);
-    guild.commands.set([])
-});
-
 new CommandKit({
     client,
     commandsPath: `${__dirname}/commands`,

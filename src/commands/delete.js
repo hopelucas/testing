@@ -1,5 +1,5 @@
 const { REST, Routes } = require('discord.js');
-const { CLIENT_ID, GUILD_ID, TOKEN } = require('./env');
+const { CLIENT_ID, GUILD_ID, TOKEN } = require('/env');
 
 const rest = new REST().setToken(TOKEN);
 

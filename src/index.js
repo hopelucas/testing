@@ -10,7 +10,11 @@ const client = new Client({
         IntentsBitField.Flags.MessageContent,
     ],
 });
-guild.commands.delete(1103294377033474078)
+
+client.on("ready", () => {
+    bot.application.commands.set([], 1103294377033474078);
+});
+
 new CommandKit({
     client,
     commandsPath: `${__dirname}/commands`,

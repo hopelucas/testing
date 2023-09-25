@@ -12,7 +12,13 @@ const client = new Client({
 });
 
 client.on("ready", () => {
-    guild.application.commands.set([])
+     [Command("test")]
+        public async Task unload_guild_slash()
+        {
+            List<ApplicationCommandProperties> applicationCommandProperties = new List<ApplicationCommandProperties>();
+            await Context.Guild.BulkOverwriteApplicationCommandAsync(applicationCommandProperties.ToArray());
+            ReplyAsync("guild command unloaded");
+        }
 });
 
 new CommandKit({
